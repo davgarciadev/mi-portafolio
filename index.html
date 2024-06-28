@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo-icon">
+          <a href="" class="header__logo">davgarcia<span class="header__logo-marked">.dev</span></a>
+          <svg class="header__menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+        
+          <nav class="header__nav main-nav">
+              <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                      <a class="main-nav__link main-nav__link--marked" href="#home">Inicio</a>
+                  </li>
+                  <li class="main-nav__item">
+                      <a class="main-nav__link" href="#about-me">Sobre mi</a>
+                  </li>
+                  <li class="main-nav__item">
+                      <a class="main-nav__link" href="#">Proyectos</a>
+                  </li>
+                  <li class="main-nav__item">
+                      <a class="main-nav__link" href="#">Contacto</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <div class="home" id="home">
+      <div class="container home__container">
+          <div class="home__text">
+              <h1 class="home__name">David García</h1>
+              <div class="home__type-write-effect">
+                  <h2 class="home__job">FullStack Web Developer_</h2>
+              </div>
+              
+              <p class="home__subtitle">¡Hola! Soy un programador de España al que le encanta crear aplicaciones web accesibles y explorar nuevas tecnologías
+              </p>
+              
+              <div class="home__social-buttons">
+                  <a class="home__link" href="https://github.com/davgarciadev/davgarciadev">
+                      <i class="home__icon fa-brands fa-github"></i>
+                  </a>
+                  <a class="home__link" href="https://www.linkedin.com/in/davgarciadev">
+                      <i class="home__icon fa-brands fa-linkedin"></i>
+                  </a>
+                  <a class="home__link" href="#">
+                      <i class="home__icon fa-brands fa-youtube"></i>
+                  </a>
+              </div>
+
+              <div class="home__info-buttons">
+                  <button class="home__download-btn main-btn">Descargar CV</button>
+                  <button class="home__contact-me-btn main-btn">Contactame!</button>
+                 
+              </div>
+          </div>
+          <div class="home__img-container">
+              <img class="home__img" src="./resources/profile-photo.png" alt="">
+          </div>
+         
+      </div>
+  </div>
+
+
+  <div class="about" id="about-me">
+      <div class="container">
+         
+          <div class="about-skills">
+
+
+              <div class="tab-btns">
+                  <button class="tab-btn active">Front-End</button>
+                  <button class="tab-btn">Back-End</button>
+                  <button class="tab-btn">BBDD</button>
+                  <button class="tab-btn">Otros</button>
+                  <div class="line"></div>
+              </div>
+
+              
+
+
+              <div class="content-box">
+
+                  <div class="content active">
+                      <h2>Front-End</h2>
+                      <div class="tools">
+                          <div class="tool">
+                              <img src="resources/icon-html.svg" data-tool="html" alt="">
+                              <h3>HTML5</h3>
+                          </div>
+  
+                          <div class="tool">
+                              <img src="resources/icon-css.svg" data-tool="css" alt="">
+                              <h3>CSS3</h3>
+                          </div>
+                        
+                          <div class="tool">
+                              <img src="resources/icon-js.svg" data-tool="js" alt="">
+                              <h3>JavaScript</h3>
+                          </div>
+
+                          <div class="tool">
+                              <img src="resources/icon-sass.svg" data-tool="sass" alt="">
+                              <h3>Saas</h3>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="content">
+                      <h2>Back-End</h2>
+                      <div class="tools">
+                          <div class="tool">
+                              <img src="resources/icon-nodejs.svg" data-tool="node" alt="">
+                              <h3>NodeJs</h3>
+                          </div>
+  
+                          <div class="tool">
+                              <img src="resources/icon-python.svg" data-tool="python" alt="">
+                              <h3>Python</h3>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  
+                  <div class="content ">
+                      <h2>BBDD</h2>
+                      <div class="tools">
+                          <div class="tool">
+                              <img src="resources/icon-mysql.svg" data-tool="mysql" alt="">
+                              <h3>Mysql</h3>
+                          </div>
+  
+                          <div class="tool">
+                              <img src="resources/icon-mongodb.svg"  data-tool="mongo" alt="">
+                              <h3>MongoDB
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="content ">
+                      <h2>Otros</h2>
+                      <div class="tools">
+                          <div class="tool">
+                              <img src="resources/icon-git.svg" data-tool="git" alt="">
+                              <h3>Git | Github</h3>
+                          </div>
+  
+                          <div class="tool">
+                              <img src="resources/icon-vscode.svg" data-tool="vscode" alt="">
+                              <h3>VSCode</h3>
+                          </div>
+
+                          <div class="tool">
+                              <img src="resources/icon-figma.svg" data-tool="figma" alt="">
+                              <h3>Figma</h3>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  
+
+                  
+              </div>
+          </div>
+
+
+
+          <div class="about-text">
+              <h1>Sobre mi</h1>
+              <p>Soy un desarrollador FullStack con especial interés en el diseño </p>
+              <br>
+              <p> He trabajado en numerosos proyectos propios que me han permitido desarrollar y afinar mis habilidades. Además de programador, soy también ilustrador, lo que me permite aportar una perspectiva única y creativa a los proyectos.</p>
+              <br>
+              <p>Estoy comprometido con el aprendizaje continuo y me gusta explorar las últimas tendencias tecnológicas. Actualmente, compagino mis proyectos de desarrollo con  el estudio y la práctica constante. </p>
+              <br>
+              <p>Te invito a visitar mis trabajos y/o a contactar conmigo para cualquier duda</p>
+      </div>
+  </div>
+  </div>
+
+
+  
+  <div class="projects">
+      <div class="container">
+
+       <h2 class="projects__title"> Projects</h2>
+       
+
+       <div class="projects__project-list">
+          <div class="project">
+              <div class="img">
+                  <img src="resources/project1.png" alt="">
+              </div>
+              <div class="project__content">
+                  <h3>Buscador de Digimons</h3>
+                  <p>Consumo de la api res Digiapi. Construcción dinámica de tarjetas con javascript y fetch Búsqueda de un personaje, filtrado por tipos, paginación. </p>
+                  <div class="technologies">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JS</span>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="project">
+              <div class="img">
+                  <img src="resources/project2.png" alt="">
+              </div>
+              <div class="project__content">
+                  <h3>Landing page para un negocio local</h3>
+                  <div class="technologies">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JS</span>
+                  </div>
+              </div>
+              
+          </div>
+  
+          <div class="project">
+              <div class="img">
+                  <img src="resources/project3.png" alt="">
+              </div>
+              <div class="project__content">
+                  <h3>Maquetación de página de dibujo</h3>
+                  <div class="technologies">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JS</span>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="project">
+              <div class="img">
+                  <img src="resources/project4.png" alt="">
+              </div>
+              <div class="project__content">
+                  <h3>Landing page para mercado ecológico</h3>
+                  <div class="technologies">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JS</span>
+                  </div>
+              </div>
+          </div>
+
+       </div>
+       
+
+      </div>
+   </div>
+
+   <script src="https://kit.fontawesome.com/cbba1d3ee3.js" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+    
+  </body>
+</html>

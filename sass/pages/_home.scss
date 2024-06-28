@@ -1,0 +1,274 @@
+.home{
+    height: 100vh;
+    max-height: 800px;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    // Text Container
+    &__text{
+        width: 50%;
+        
+    }
+
+    // Title: David Garcia
+    &__name{
+        font-size: 5em;
+        white-space: nowrap;
+
+       
+    }
+
+    // Job: FullStack Developer
+    &__type-write-effect{
+        display: inline-block;
+    }
+
+   
+
+    &__job{
+        margin-top: 20px;
+        color: $main-color;
+        text-transform: uppercase;
+        font-family: monospace;
+        letter-spacing: 5px;
+        font-size: 2rem;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 4px solid $main-color;
+        animation:
+            typing 4s steps(24) infinite alternate,
+            cursor 0.4s step-end infinite alternate
+    }
+
+  
+    // Description
+
+    &__subtitle{
+        margin-top: 40px;
+        font-size: 1rem;
+        color: lightgray;
+    }
+
+    // Social Buttons
+    &__social-buttons{
+        margin-top: 40px;    
+    }
+
+    &__link{
+       
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid $main-color;
+        margin-right: 15px;
+
+        &:hover {
+            border-color: $main-color-light;
+        }
+    }
+
+    &__icon{
+        font-size: 1.6rem;
+        color: $main-color;
+        &:hover {
+            color: $main-color-light;
+        }
+       
+    }
+
+    // Info buttons
+
+    &__info-buttons{
+        margin-top: 40px;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__download-btn{
+        
+    }
+
+    &____contact-me-btn{
+
+    }
+
+
+    // Profile Image
+    &__img-container{
+       
+        width: 500px;
+        min-width: 400px;
+        
+    }
+
+    &__img{
+        width: 100%;
+        
+    }
+
+
+}
+
+
+// Regular PC
+@media screen and (width < 900px ) {
+    .home__name{
+        font-size: 4rem;
+    }
+
+    .home__job{
+        font-size: 1.6rem;
+    }
+    .home__img-container{
+       
+        min-width: 250px;
+        
+    }
+
+}
+
+// --- HOME SECTION -> RESPONSIVE ---
+
+// Tabletas Medianas
+@media screen and (width < 775px ) {
+
+    .home{
+        max-height: fit-content;
+    }
+
+    .home__text{
+        width: 50%;
+        
+    }
+
+    .home__name{
+        font-size: 3.5rem;
+    }
+    
+    .home__img-container{
+        width: 45%;
+        min-width: 300px;
+        
+    }
+
+    .home__subtitle{
+        font-size: 1.3rem;
+
+    }
+
+}
+
+// Tabletas pequeñas
+
+@media screen and (width < 600px ) {
+    .home{
+        height: fit-content;
+    }
+    
+    .home__img-container{
+        min-width: 200px;
+    }
+
+    .home__text{
+        width: 50%;
+        
+    }
+
+    .home__info-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+// Dispositivos móviles
+
+@media screen and (width < 480px ) {
+
+    .home{
+        max-height: fit-content;
+    }
+    .home__container{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: none;
+        gap: 20px;
+    }
+
+    .home__text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__name{
+        font-size: 3rem;
+    }
+
+    .home__subtitle{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .home__info-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home__type-write-effect{
+        align-self: flex-start;
+    }
+
+    .home__job{
+        font-size: 1.2rem;
+    }
+
+    .home__img-container{
+        width: 250px;
+        min-width: none;
+        
+    }
+
+}
+
+// Dispositivos móviles muy pequeños
+
+@media screen and (width < 380px ) {
+    .home{
+        height: fit-content;
+    }
+    
+    .home__name{
+        font-size: 2.5rem;
+    }
+
+    .home__subtitle{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+
+   
+    .home__job{
+        font-size: 1rem;
+    }
+
+    
+
+
+}
+
+

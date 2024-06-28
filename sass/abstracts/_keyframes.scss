@@ -1,0 +1,9 @@
+@keyframes cursor {
+    from { border-color: $main-color;}
+    50% { border-right-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
