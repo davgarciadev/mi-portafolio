@@ -28,6 +28,7 @@ menuItemsElement.forEach(item => {
 const tabBtnElements = document.querySelectorAll(".tab-buttons__tab-btn")
 const stackContainer = document.querySelector(".about__stacks")
 const lineElement = document.querySelector(".tab-buttons__line")
+const techIcons = document.querySelectorAll(".stacks__img")
 
 // Cada vez que clickemos en un botón mostramos el "stack" correspondiente
 tabBtnElements.forEach((btn) => {
@@ -59,3 +60,58 @@ tabBtnElements.forEach((btn) => {
 })
 
 
+//--- Icon highlight hover effect ---
+techIcons.forEach(icon => {
+  
+    icon.addEventListener("mouseover", (e) => {
+        var color = "";
+        switch(e.target.dataset.tool){
+            case "html":
+                color = "#FF6D00";
+                break;
+            case "css":
+                color = "#039BE5";
+                break;
+            case "js":
+                color = "#FFD600";
+                break;
+            case "sass":
+                color = "#F06292";
+                break;
+            case "node":
+                color = "#4CAF50";
+                break;
+            case "python":
+                color = "#FFC107";
+                break;
+            case "mysql":
+                color = "#F57F17";
+                break;
+            case "mongo":
+                color = "#4CAF50";
+                break;
+            case "git":
+                color = "#F4511E";
+                break;
+            case "vscode":
+                color = "#BA82F5";
+                break;
+            case "figma":
+                color = "#29B6F6";
+                break;
+        }
+
+        // Añadimos la sombra de color
+        e.target.style.filter = `drop-shadow(0px 0px 10px ${color})`
+        // Aumentamos la escala
+        e.target.style.transform = "scale(1.1)"
+    })
+})
+
+//--- Icon highlight mouseleave effect ---
+techIcons.forEach(icon => {
+    icon.addEventListener("mouseleave", (e) => {
+        e.target.style.filter = `none`
+        e.target.style.transform = "scale(1)"
+    })
+})

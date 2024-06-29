@@ -1,24 +1,22 @@
 .about {
-    border: 1px solid pink;
     padding: 40px 0px;
     background-color: $dark-grey-color;
 
     &__container {
-        border: 1px solid greenyellow;
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
     }
     &__skills {
-        border: 1px solid red;
         width: 50%;
         background-color: $medium-grey-color;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px $main-color;
         
        
     }
     &__stacks {
       //height: calc(100% - 72px);
-      border: 1px solid green;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -38,7 +36,6 @@
 
     }
     &__text {
-        border: 1px solid red;
         width: 50%;
 
     }
@@ -61,9 +58,9 @@
       color: white;
       font-size: 1.6rem;
       background-color: transparent;
-      border: 1px solid lightblue;
       cursor: pointer;
       padding: 20px 10px;
+      border: none;
   
 
       &--active {
@@ -87,7 +84,6 @@
 
     &__stack {
       display: none;
-      border: 1px solid pink;
      
 
 
@@ -116,7 +112,6 @@
     &__tools {
       display: flex;
       justify-content: center;
-      border: 1px solid purple;
       gap: 20px;
       width: 100%;
     }
