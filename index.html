@@ -72,123 +72,110 @@
 
 
   <div class="about" id="about-me">
-      <div class="container">
+    <div class="about__container container">
+        <div class="about__skills">
+            
+            <div class="about__tab-buttons tab-buttons">
+                <button class="tab-buttons__tab-btn tab-buttons__tab-btn--active" data-stack="frontend">Front-End</button>
+                <button class="tab-buttons__tab-btn" data-stack="backend">Back-End</button>
+                <button class="tab-buttons__tab-btn" data-stack="bbdd">BBDD</button>
+                <button class="tab-buttons__tab-btn" data-stack="others">Otros</button>
+                <div class="tab-buttons__line"></div>
+            </div>
+
+            <div class="about__stacks stacks">
+                <div class="stacks__stack stacks__stack--frontend stacks__stack--checked" id="frontend">
+                    <h2 class="stacks__title">Front-End</h2>
+                    <div class="stacks__tools">
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-html.svg" data-tool="html" alt="">
+                            <h3 class="stacks__txt">HTML5</h3>
+                        </div>
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-css.svg" data-tool="css" alt="">
+                            <h3 class="stacks__txt">CSS3</h3>
+                        </div>
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-js.svg" data-tool="js" alt="">
+                            <h3 class="stacks__txt">JavaScript</h3>
+                        </div>
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-sass.svg" data-tool="sass" alt="">
+                            <h3 class="stacks__txt">Sass</h3>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="stacks__stack stacks__stack--backend" id="backend">
+                    <h2 class="stacks__title">Back-End</h2>
+                    <div class="stacks__tools">
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-nodejs.svg" data-tool="node" alt="">
+                            <h3 class="stacks__txt">NodeJs</h3>
+                        </div>
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-python.svg" data-tool="python" alt="">
+                            <h3 class="stacks__txt">Python</h3>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="stacks__stack stacks__stack--bbdd" id="bbdd">
+                    <h2 class="stacks__title">BBDD</h2>
+                    <div class="stacks__tools">
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-mysql.svg" data-tool="mysql" alt="">
+                            <h3 class="stacks__txt">Mysql</h3>
+                        </div>
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-mongodb.svg" data-tool="mongo" alt="">
+                            <h3 class="stacks__txt">MongoDB</h3>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="stacks__stack stacks__stack--otros" id="others">
+                    <h2 class="stacks__title">Otros</h2>
+                    <div class="stacks__tools">
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-git.svg" data-tool="git" alt="">
+                            <h3 class="stacks__txt">Git | Github</h3>
+                        </div>
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-vscode.svg" data-tool="vscode" alt="">
+                            <h3 class="stacks__txt">VSCode</h3>
+                        </div>
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-figma.svg" data-tool="figma" alt="">
+                            <h3 class="stacks__txt">Figma</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__text text">
+            <h1 class="text__title">Sobre mi</h1>
+
+            <p class="text__paragraph"> Provengo del sector artístico, donde me he formado como <em>Técnico Superior en Artes Plásticas y Diseño</em> especializado en <span class="text__highlight">Ilustración.</span></p>
+            <br>
+            <p class="text__paragraph"> Recientemente he transicionado al <span class="text__highlight">Desarrollo Web</span>, un campo que ya me era familiar, ya que en el pasado había cursado los primeros años de <em>Ingeniería del Software en la Universidad de Sevilla</em></p>
+            <br>
+            <p class="text__paragraph"> Actualmente estoy estudiando un máster en desarrollo<span class="text__highlight"> Full Stack</span> en la <em>Academia Conquerblocks</em> y planeo retomar mis estudios universitarios.</p>
+            <br>
+            <p class="text__paragraph"> Mi <span class="text__highlight">objetivo actual</span> es construir una carrera sólida en desarrollo web. Para ello aplico todo aprendido en proyectos personales</p>
+            <br>
+            <p class="text__paragraph"> Te invito a explorar mis proyectos recientes y a contactarme para cualquier colaboración 🚀</p>
+            <br>
          
-          <div class="about-skills">
+            
+    </div>
 
+    </div>
+</div>
 
-              <div class="tab-btns">
-                  <button class="tab-btn active">Front-End</button>
-                  <button class="tab-btn">Back-End</button>
-                  <button class="tab-btn">BBDD</button>
-                  <button class="tab-btn">Otros</button>
-                  <div class="line"></div>
-              </div>
+         
 
-              
-
-
-              <div class="content-box">
-
-                  <div class="content active">
-                      <h2>Front-End</h2>
-                      <div class="tools">
-                          <div class="tool">
-                              <img src="resources/icon-html.svg" data-tool="html" alt="">
-                              <h3>HTML5</h3>
-                          </div>
-  
-                          <div class="tool">
-                              <img src="resources/icon-css.svg" data-tool="css" alt="">
-                              <h3>CSS3</h3>
-                          </div>
-                        
-                          <div class="tool">
-                              <img src="resources/icon-js.svg" data-tool="js" alt="">
-                              <h3>JavaScript</h3>
-                          </div>
-
-                          <div class="tool">
-                              <img src="resources/icon-sass.svg" data-tool="sass" alt="">
-                              <h3>Saas</h3>
-                          </div>
-                      </div>
-                  </div>
-
-
-                  <div class="content">
-                      <h2>Back-End</h2>
-                      <div class="tools">
-                          <div class="tool">
-                              <img src="resources/icon-nodejs.svg" data-tool="node" alt="">
-                              <h3>NodeJs</h3>
-                          </div>
-  
-                          <div class="tool">
-                              <img src="resources/icon-python.svg" data-tool="python" alt="">
-                              <h3>Python</h3>
-                          </div>
-                      </div>
-                  </div>
-                  
-                  
-                  <div class="content ">
-                      <h2>BBDD</h2>
-                      <div class="tools">
-                          <div class="tool">
-                              <img src="resources/icon-mysql.svg" data-tool="mysql" alt="">
-                              <h3>Mysql</h3>
-                          </div>
-  
-                          <div class="tool">
-                              <img src="resources/icon-mongodb.svg"  data-tool="mongo" alt="">
-                              <h3>MongoDB
-                              </h3>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="content ">
-                      <h2>Otros</h2>
-                      <div class="tools">
-                          <div class="tool">
-                              <img src="resources/icon-git.svg" data-tool="git" alt="">
-                              <h3>Git | Github</h3>
-                          </div>
-  
-                          <div class="tool">
-                              <img src="resources/icon-vscode.svg" data-tool="vscode" alt="">
-                              <h3>VSCode</h3>
-                          </div>
-
-                          <div class="tool">
-                              <img src="resources/icon-figma.svg" data-tool="figma" alt="">
-                              <h3>Figma</h3>
-                          </div>
-
-                      </div>
-                  </div>
-          
-                  
-
-                  
-              </div>
-          </div>
-
-
-
-          <div class="about-text">
-              <h1>Sobre mi</h1>
-              <p>Soy un desarrollador FullStack con especial interés en el diseño </p>
-              <br>
-              <p> He trabajado en numerosos proyectos propios que me han permitido desarrollar y afinar mis habilidades. Además de programador, soy también ilustrador, lo que me permite aportar una perspectiva única y creativa a los proyectos.</p>
-              <br>
-              <p>Estoy comprometido con el aprendizaje continuo y me gusta explorar las últimas tendencias tecnológicas. Actualmente, compagino mis proyectos de desarrollo con  el estudio y la práctica constante. </p>
-              <br>
-              <p>Te invito a visitar mis trabajos y/o a contactar conmigo para cualquier duda</p>
-      </div>
-  </div>
-  </div>
 
 
   

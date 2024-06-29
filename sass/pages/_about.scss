@@ -1,0 +1,191 @@
+.about {
+    border: 1px solid pink;
+    padding: 40px 0px;
+    background-color: $dark-grey-color;
+
+    &__container {
+        border: 1px solid greenyellow;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__skills {
+        border: 1px solid red;
+        width: 50%;
+        background-color: $medium-grey-color;
+        
+       
+    }
+    &__stacks {
+      //height: calc(100% - 72px);
+      border: 1px solid green;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 0px
+      
+
+    }
+
+    &__tab-buttons {
+      background-color: $light-grey-color;
+      display: flex;
+      justify-content: space-between;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;  
+      border-bottom: 2px solid rgb(131, 131, 131);
+      position:relative
+
+    }
+    &__text {
+        border: 1px solid red;
+        width: 50%;
+
+    }
+  }
+
+  .tab-buttons {
+   
+    &__line{
+      width: 0px;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: $main-color;
+      transition: all 0.3s ease;
+    }
+   
+    &__tab-btn {
+      flex-grow: 1;
+      color: white;
+      font-size: 1.6rem;
+      background-color: transparent;
+      border: 1px solid lightblue;
+      cursor: pointer;
+      padding: 20px 10px;
+  
+
+      &--active {
+        color: $main-color;
+      }
+    }
+  }
+
+  .stacks {
+    
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        transition: transform 0.4s ease;
+
+        &:hover{
+          transform: scale(1.1);
+        }
+    }
+
+    &__stack {
+      display: none;
+      border: 1px solid pink;
+     
+
+
+      &--backend {
+      }
+      &--bbdd {
+      }
+      &--frontend {
+      }
+      &--otros {
+      }
+
+      &--checked{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+      }
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+   
+    &__tools {
+      display: flex;
+      justify-content: center;
+      border: 1px solid purple;
+      gap: 20px;
+      width: 100%;
+    }
+
+    &__tool {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__txt {
+      font-weight: 200;
+    }
+  }
+
+  .text{
+    &__title{
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 30px;
+      text-decoration-line: underline;
+      text-decoration-color: $main-color;
+      text-underline-offset: 10px;
+      
+    }
+
+    &__highlight{
+      font-weight: bold;
+      color: $main-color;
+    }
+
+  }
+
+  // --- ABOUT SECTION -> RESPONSIVE ---
+
+// PC con pantalla pequeña /Tablets grandes
+@media screen and (width < 820px ) {
+  .about__container{
+    flex-direction: column-reverse
+  }
+
+  .about__text{
+    width: 100%;
+    
+  }
+  .about__skills{
+    width: 100%;
+  }
+ 
+}
+
+// Moviles
+@media screen and (width < 440px ) {
+  .tab-buttons__tab-btn{
+    font-size: 1.1rem;
+  }
+
+  .stacks__img{
+    width: 50px;
+  }
+
+  .stacks__txt{
+    font-size: 1rem;
+  }
+
+  .text__title{
+    font-size: 2.4rem;
+  }
+
+
+ 
+}
