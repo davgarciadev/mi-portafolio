@@ -1,0 +1,112 @@
+.contact {
+  padding: 100px 0px;
+  background-color: $dark-grey-color;
+  
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  &__description {
+    width: 40%;
+    // estilos para la descripción de contacto
+  }
+
+  &__title {
+    font-size: 3rem;
+    text-decoration-line: underline;
+      text-decoration-color: $main-color;
+      text-underline-offset: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__introduction {
+    // estilos para la introducción de contacto
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+  }
+
+ }
+
+ .form {
+  &__name {
+     
+  }
+
+   &__email {
+
+  }
+
+  &__text-area {
+
+  }
+
+   &__btn {
+      // estilos para el botón del formulario
+      background: none;
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      border-bottom: 1px solid $main-color;
+      width: fit-content;
+      padding-bottom: 5px;
+      align-self:self-end;
+      margin-top: 10px;
+      cursor: pointer;
+
+      &:hover{
+        color: $main-color;
+      }
+  }
+ }
+
+
+
+// --- CONTACT SECTION -> RESPONSIVE ---
+
+ @media screen and (width < 760px ) {
+  
+
+  .contact__container{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contact__description{
+    width: 80%;
+    text-align: center;
+  }
+
+  .contact__form{
+    width: 80%;
+  }
+
+}
+
+
+
+
+@media screen and (width < 450px ) {
+  
+  .contact__description{
+    width: 100%;
+  
+  }
+
+  .contact__form{
+    width: 100%;
+  }
+
+
+}
+
+
+

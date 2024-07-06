@@ -10,6 +10,7 @@
     
     <header class="header" id="header">
       <div class="container header__container">
+        <div class="header__bg"></div>
         <div class="header__logo-icon">
           <a href="" class="header__logo">davgarcia<span class="header__logo-marked">.dev</span></a>
           <svg class="header__menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
@@ -27,7 +28,7 @@
                       <a class="main-nav__link" href="#projects">Proyectos</a>
                   </li>
                   <li class="main-nav__item">
-                      <a class="main-nav__link" href="#">Contacto</a>
+                      <a class="main-nav__link" href="#contact">Contacto</a>
                   </li>
               </ul>
           </nav>
@@ -292,6 +293,20 @@
       </div>
     </section>
 
+    <section class="contact" id="contact">
+        <div class="contact__container container">
+            <div class="contact__description">
+                <h3 class="contact__title">Contact</h3>
+                <p class="contact__introduction">Me encantará escuchar tu propuesta y cómo podría ayudarte. Por favor rellena el formulario y te responderé lo antes posible</p>
+            </div>
+            <form class="contact__form form">
+               <input type="text" class="form__name" name="name" placeholder="NAME" required>
+               <input type="email" class="form__email" name="email" placeholder="EMAIL" required>
+               <textarea name="textarea" id="textarea" name="message" class="form__text-area" placeholder="MESSAGE" rows="5" required></textarea>
+               <button type="submit" class="form__btn">Send Message</button>
+            </form>
+        </div>
+    </section>
    <script src="https://kit.fontawesome.com/cbba1d3ee3.js" crossorigin="anonymous"></script>
     <script type="module" src="/main.js"></script>
     

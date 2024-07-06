@@ -1,6 +1,21 @@
 .header {
-   
+  
+    position:fixed;
+    width: 100%;
+    z-index: 10;
     padding: 20px 0px;
+
+    .header__bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.699);
+        z-index: -1;
+        backdrop-filter: blur(4px);
+
+    }
     &__container {
         display: flex;
         justify-content: space-between;
@@ -12,6 +27,7 @@
     &__logo-icon{
         display: flex;
         gap: 10px;
+     
      
     }
 
@@ -28,6 +44,7 @@
     }
     
     &__menu-icon{
+        z-index: 1;
         display: none;
         fill: white;
         width: 40px;
@@ -39,7 +56,7 @@
 }
 
 .main-nav {
-
+  z-index: 1;
     
 
     &__list {

@@ -18,3 +18,18 @@ a{
 img{
     width: 100%;
 }
+
+input,textarea{
+    border: none;
+    background: none;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    text-transform: uppercase;
+    color: white;
+
+    &:focus{
+        outline: none;
+        border-color: $main-color;
+    }
+}
