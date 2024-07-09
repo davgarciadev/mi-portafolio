@@ -33,3 +33,15 @@ input,textarea{
         border-color: $main-color;
     }
 }
+
+.highlight{
+    font-weight: bold;
+    color: $main-color;
+  }
+
+.underlined{
+    text-decoration-line: underline;
+      text-decoration-color: $main-color;
+      text-underline-offset: 10px;
+    margin-bottom: 20px;
+}

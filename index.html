@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./resources/dg-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>David García</title>
   </head>
   <body>
     
@@ -43,24 +43,25 @@
                   <h2 class="home__job">FullStack Web Developer_</h2>
               </div>
               
-              <p class="home__subtitle">¡Hola! Soy un programador de España al que le encanta crear aplicaciones web accesibles y explorar nuevas tecnologías
+              <p class="home__subtitle">Hola! Soy un desarrollador Full-Stack de España, con una fuerte inclinación hacia el desarrollo Front-End y el diseño.
               </p>
               
               <div class="home__social-buttons">
-                  <a class="home__link" href="https://github.com/davgarciadev/davgarciadev">
+                  <a class="home__link" href="https://github.com/davgarciadev/davgarciadev" target="_blank">
                       <i class="home__icon fa-brands fa-github"></i>
                   </a>
-                  <a class="home__link" href="https://www.linkedin.com/in/davgarciadev">
+                  <a class="home__link" href="https://www.linkedin.com/in/davgarciadev" target="_blank">
                       <i class="home__icon fa-brands fa-linkedin"></i>
                   </a>
-                  <a class="home__link" href="#">
-                      <i class="home__icon fa-brands fa-youtube"></i>
-                  </a>
+                  <a class="home__link" href="https://www.linkedin.com/in/davgarciadev" target="_blank">
+                    <i class="home__icon fa-brands fa-discord"></i>
+                </a>
+                
               </div>
 
               <div class="home__info-buttons">
                   <button class="home__download-btn main-btn">Descargar CV</button>
-                  <button class="home__contact-me-btn main-btn">Contactame!</button>
+                  <button class="home__contact-me-btn main-btn"><a href="#contact">Contactame!</a></button>
                  
               </div>
           </div>
@@ -155,15 +156,17 @@
         </div>
 
         <div class="about__text text">
-            <h1 class="text__title">Sobre mi</h1>
+            <h1 class="text__title underlined">Sobre mi</h1>
 
-            <p class="text__paragraph"> Provengo del sector artístico, donde me he formado como <em>Técnico Superior en Artes Plásticas y Diseño</em> especializado en <span class="text__highlight">Ilustración.</span></p>
+            <p class="text__paragraph"> Provengo del sector artístico, donde me he formado como <em>Técnico Superior en Artes Plásticas y Diseño</em> especializado en <span class="highlight">Ilustración.</span></p>
             <br>
-            <p class="text__paragraph"> Recientemente he transicionado al <span class="text__highlight">Desarrollo Web</span>, un campo que ya me era familiar, ya que en el pasado había cursado los primeros años de <em>Ingeniería del Software en la Universidad de Sevilla</em></p>
+            <p class="text__paragraph"> Recientemente he transicionado al <span class="highlight">Desarrollo Web</span>, un campo que ya me era familiar, ya que en el pasado había cursado los primeros años de <em>Ingeniería del Software en la Universidad de Sevilla</em></p>
             <br>
-            <p class="text__paragraph"> Actualmente estoy estudiando un máster en desarrollo<span class="text__highlight"> Full Stack</span> en la <em>Academia Conquerblocks</em> y planeo retomar mis estudios universitarios.</p>
+            <p class="text__paragraph"> Actualmente estoy estudiando un máster en desarrollo<span class="highlight"> Full Stack</span> en la <em>Academia Conquerblocks</em> y planeo retomar mis estudios universitarios.</p>
             <br>
-            <p class="text__paragraph"> Mi <span class="text__highlight">objetivo actual</span> es construir una carrera sólida en desarrollo web. Para ello aplico todo aprendido en proyectos personales</p>
+        <p class="text__paragraph">Mi <span class="highlight">objetivo actual</span> es desarrollar una carrera sólida en el ámbito del desarrollo web, comenzando como desarrollador front-end y progresando gradualmente hacia Full Stack</p>
+            <br>
+            <p>Para ello aplico los conocimientos adquiridos en diversos <span class="highlight"><a href="#projects">proyectos personales</a></span></p>
             <br>
             <p class="text__paragraph"> Te invito a explorar mis proyectos recientes y a contactarme para cualquier colaboración 🚀</p>
             <br>
@@ -177,69 +180,70 @@
   <section class="projects" id="projects">
       <div class="projects__container container">
 
-       <h2 class="projects__title"> Projects</h2>
+       <h2 class="projects__title"> Projectos</h2>
        
 
        <div class="projects__project-list">
 
           <div class="projects__project project project--p1">
               <div class="project__img-container">
-                  <img class="project__img" src="resources/project1.png" alt="">
+                  <img class="project__img" src="resources/screenshoot3.png" alt="">
                   <div class="project__modal">
 
                     <div class="project__view project__view--code">
                         <i class="project__icon fa-solid fa-globe"></i>
-                        <a class="project__link" href="#">Visitar Sitio</a>
+                        <a class="project__link" href="https://rock-band-site.davgarcia.dev/" target="_blank">Visitar Sitio</a>
                     </div>
                     <div class="project__view project__view--live">
                         <i class="project__icon fa-brands fa-github"></i>
-                        <a class="project__link"  href="#">Ver Código</a>
+                        <a class="project__link"  href="https://github.com/davgarciadev/rock-band-site" target="_blank">Ver Código</a>
                     </div>
 
                   </div>
               </div>
               <div class="project__content">
-                  <h3  class="project__title">Buscador de Digimons</h3>
-                  <p class="project__description">Consumo de la api res Digiapi. Construcción dinámica de tarjetas con javascript y fetch Búsqueda de un personaje, filtrado por tipos, paginación. </p>
+                  <h3  class="project__title underlined">Grupo de Rock - Web Estática</h3>
+                  <p class="project__description">Maquetación de una página web estática para un grupo de rock ficticio, con diseño responsive adaptado a múltiples tamaños de pantalla. Incluye secciones como Home, Contacto, Conciertos y Videos.</p>
+
                   <div class="project__technologies">
-                      <span class="project__tag">HTML</span>
-                      <span class="project__tag">CSS</span>
-                      <span class="project__tag">JS</span>
+                        <span class="project__tag">HTML</span>   
+                      <span class="project__tag">SASS</span>
+                      <span class="project__tag">JAVASCRIPT</span>
                   </div>
               </div>
           </div>
 
           <div class="projects__project project project--p2">
             <div class="project__img-container">
-                <img class="project__img" src="resources/project1.png" alt="">
+                <img class="project__img" src="resources/screenshot1.png" alt="">
                 <div class="project__modal">
 
                     <div class="project__view project__view--code">
                         <i class="project__icon fa-solid fa-globe"></i>
-                        <a class="project__link" href="#">Visitar Sitio</a>
+                        <a class="project__link" href="https://digimon-card-explorer.davgarcia.dev/" target="_blank">Visitar Sitio</a>
                     </div>
                     <div class="project__view project__view--live">
                         <i class="project__icon fa-brands fa-github"></i>
-                        <a class="project__link"  href="#">Ver Código</a>
+                        <a class="project__link"  href="https://github.com/davgarciadev/digimon-card-explorer" target="_blank">Ver Código</a>
                     </div>
                     
                     
                   </div>
             </div>
             <div class="project__content">
-                <h3  class="project__title">Buscador de Digimons</h3>
-                <p class="project__description">Consumo de la api res Digiapi. Construcción dinámica de tarjetas con javascript y fetch Búsqueda de un personaje, filtrado por tipos, paginación. </p>
+                <h3  class="project__title underlined">Explorador de Tarjetas "Digimon"</h3>
+                <p class="project__description">Aplicación web que utiliza una <strong>api (DigiApi)</strong> para mostrar información dinámica de personajes de "Digimon" en forma de tarjetas interactivas. Opciones de <strong>búsqueda</strong> completa y <strong>filtrado</strong> por tipo y por nombre</p>
                 <div class="project__technologies">
                     <span class="project__tag">HTML</span>
                     <span class="project__tag">CSS</span>
-                    <span class="project__tag">JS</span>
+                    <span class="project__tag">JAVASCRIPT</span>
                 </div>
             </div>
         </div>
 
         <div class="projects__project project project--p3">
             <div class="project__img-container">
-                <img class="project__img" src="resources/project1.png" alt="">
+                <img class="project__img" src="resources/screenshot_none.png" alt="">
                 <div class="project__modal">
                     <div class="project__view project__view--code">
                         <i class="project__icon fa-solid fa-globe"></i>
@@ -252,8 +256,8 @@
                   </div>
             </div>
             <div class="project__content">
-                <h3  class="project__title">Buscador de Digimons</h3>
-                <p class="project__description">Consumo de la api res Digiapi. Construcción dinámica de tarjetas con javascript y fetch Búsqueda de un personaje, filtrado por tipos, paginación. </p>
+                <h3  class="project__title underlined">Proyecto 3</h3>
+                <p class="project__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ut repellendus quod numquam? Labore, ea possimus laborum commodi </p>
                 <div class="project__technologies">
                     <span class="project__tag">HTML</span>
                     <span class="project__tag">CSS</span>
@@ -264,7 +268,7 @@
         
         <div class="projects__project project project--p4">
             <div class="project__img-container">
-                <img class="project__img" src="resources/project1.png" alt="">
+                <img class="project__img" src="resources/screenshot_none.png" alt="">
                 <div class="project__modal">
                     <div class="project__view project__view--code">
                         <i class="project__icon fa-solid fa-globe"></i>
@@ -277,7 +281,7 @@
                   </div>
             </div>
             <div class="project__content">
-                <h3  class="project__title">Buscador de Digimons</h3>
+                <h3  class="project__title underlined">Proyecto 4</h3>
                 <p class="project__description">Consumo de la api res Digiapi. Construcción dinámica de tarjetas con javascript y fetch Búsqueda de un personaje, filtrado por tipos, paginación. </p>
                 <div class="project__technologies">
                     <span class="project__tag">HTML</span>
@@ -296,7 +300,7 @@
     <section class="contact" id="contact">
         <div class="contact__container container">
             <div class="contact__description">
-                <h3 class="contact__title">Contact</h3>
+                <h3 class="contact__title underlined">Contacto</h3>
                 <p class="contact__introduction">Me encantará escuchar tu propuesta y cómo podría ayudarte. Por favor rellena el formulario y te responderé lo antes posible</p>
             </div>
             <form class="contact__form form">
