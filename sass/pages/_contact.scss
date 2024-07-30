@@ -34,14 +34,15 @@
 
  .form {
   &__name {
-     
+    text-transform: none;
   }
 
    &__email {
-
+    text-transform: none;
   }
 
   &__text-area {
+    text-transform: none;
 
   }
 

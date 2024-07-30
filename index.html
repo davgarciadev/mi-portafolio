@@ -43,7 +43,7 @@
                   <h2 class="home__job">FullStack Web Developer_</h2>
               </div>
               
-              <p class="home__subtitle">Hola! Soy un desarrollador Full-Stack de España, con una fuerte inclinación hacia el desarrollo Front-End y el diseño.
+              <p class="home__subtitle">!Hola! Soy un desarrollador Full-Stack de España, especializado en el desarrollo Front-End y en el ecosistema de Javascript.
               </p>
               
               <div class="home__social-buttons">
@@ -53,14 +53,14 @@
                   <a class="home__link" href="https://www.linkedin.com/in/davgarciadev" target="_blank">
                       <i class="home__icon fa-brands fa-linkedin"></i>
                   </a>
-                  <a class="home__link" href="https://www.linkedin.com/in/davgarciadev" target="_blank">
+                  <a class="home__link" href="https://discordapp.com/users/338105354435166218" target="_blank">
                     <i class="home__icon fa-brands fa-discord"></i>
                 </a>
                 
               </div>
 
               <div class="home__info-buttons">
-                  <button class="home__download-btn main-btn">Descargar CV</button>
+                  <button class="home__download-btn main-btn"><a href="#">Descargar CV!</a></button>
                   <button class="home__contact-me-btn main-btn"><a href="#contact">Contactame!</a></button>
                  
               </div>
@@ -97,12 +97,22 @@
                             <h3 class="stacks__txt">CSS3</h3>
                         </div>
                         <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-sass.svg" data-tool="sass" alt="">
+                            <h3 class="stacks__txt">Sass</h3>
+                        </div>
+                        <div class="stacks__tool">
                             <img class="stacks__img" src="resources/icon-js.svg" data-tool="js" alt="">
                             <h3 class="stacks__txt">JavaScript</h3>
                         </div>
+                        
                         <div class="stacks__tool">
-                            <img class="stacks__img" src="resources/icon-sass.svg" data-tool="sass" alt="">
-                            <h3 class="stacks__txt">Sass</h3>
+                            <img class="stacks__img" src="resources/icon-typescript.svg" data-tool="typescript" alt="">
+                            <h3 class="stacks__txt">TypeScript</h3>
+                        </div>
+
+                        <div class="stacks__tool">
+                            <img class="stacks__img" src="resources/icon-react.svg" data-tool="react" alt="">
+                            <h3 class="stacks__txt">React</h3>
                         </div>
                     </div>
                 </div>
@@ -208,7 +218,7 @@
                   <div class="project__technologies">
                         <span class="project__tag">#HTML</span>   
                       <span class="project__tag">#SASS</span>
-                      <span class="project__tag">#JAVASCRIPT</span>
+                      <span class="project__tag">#JS</span>
                       <span class="project__tag">#VITE</span>
                   </div>
               </div>
@@ -303,17 +313,20 @@
       </div>
     </section>
 
+   
+
     <section class="contact" id="contact">
         <div class="contact__container container">
             <div class="contact__description">
                 <h3 class="contact__title underlined">Contacto</h3>
                 <p class="contact__introduction">Me encantará escuchar tu propuesta y cómo podría ayudarte. Por favor rellena el formulario y te responderé lo antes posible</p>
             </div>
-            <form class="contact__form form">
-               <input type="text" class="form__name" name="name" placeholder="NAME" required>
+        <form action="https://api.web3forms.com/submit" class="contact__form form" method="POST">
+            <input type="hidden" name="access_key" value="337a20e3-8de1-45d8-97d5-3251f9fcbaa3">
+               <input type="text" class="form__name" name="name" placeholder="NOMBRE" required>
                <input type="email" class="form__email" name="email" placeholder="EMAIL" required>
-               <textarea name="textarea" id="textarea" name="message" class="form__text-area" placeholder="MESSAGE" rows="5" required></textarea>
-               <button type="submit" class="form__btn">Send Message</button>
+               <textarea name="textarea" id="textarea" name="message" class="form__text-area" placeholder="MENSAJE" rows="5" required></textarea>
+               <button type="submit" class="form__btn">Enviar Mensaje</button>
             </form>
         </div>
     </section>

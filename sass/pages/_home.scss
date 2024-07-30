@@ -92,6 +92,11 @@
         display: flex;
         gap: 10px;
         margin-bottom: 30px;
+        color: black;
+
+        a{
+            color: black;
+        }
     }
 
     &__download-btn{
@@ -99,7 +104,7 @@
     }
 
     &____contact-me-btn{
-
+     
     }
 
 

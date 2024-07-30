@@ -3,6 +3,7 @@ import './sass/app.scss'
 
 // -- RESPONSIVE MENU -----
 // Referenciamos a los elementos del body
+const headerLinkElements = document.querySelectorAll(".main-nav__link")
 const menuIconElement = document.querySelector(".header__menu-icon");
 const menuElement = document.querySelector(".main-nav");
 const menuItemsElement = document.querySelectorAll(".main-nav__item");
@@ -19,6 +20,16 @@ menuItemsElement.forEach(item => {
         if(menuElement.classList.contains("selected")){
             menuElement.classList.remove("selected")
         }
+    })
+})
+
+// Comportamiento .Active de los links de la NavBar
+headerLinkElements.forEach(link => {
+    link.addEventListener("click", (e) => {
+        headerLinkElements.forEach( item => item.classList.remove("main-nav__link--marked"))
+        
+        link.classList.add("main-nav__link--marked")
+
     })
 })
 
@@ -99,6 +110,12 @@ techIcons.forEach(icon => {
             case "figma":
                 color = "#29B6F6";
                 break;
+            case "typescript":
+                color = "#007ACC";
+                break;
+            case "react":
+                    color = "#61DAFB";
+                    break;
         }
 
         // Añadimos la sombra de color

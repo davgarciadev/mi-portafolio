@@ -12,17 +12,17 @@
         background-color: $medium-grey-color;
         border-radius: 20px;
         box-shadow: 0px 5px 10px $main-color;
+
         
-       
     }
     &__stacks {
       //height: calc(100% - 72px);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 40px 0px
+      padding: 40px 0px;
+      height: 420px;
       
-
     }
 
     &__tab-buttons {
@@ -82,6 +82,8 @@
         }
     }
 
+   
+
     &__stack {
       display: none;
      
@@ -106,21 +108,29 @@
 
     &__title {
       font-size: 1.8rem;
-      margin-bottom: 40px;
+    
     }
    
     &__tools {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(60px,1fr));
+      gap: 40px 80px;
       width: 100%;
+      padding: 40px;
     }
 
     &__tool {
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 20px;
+
+      .html, .css{
+        width: 100px;
+      }
     }
+
+
 
     &__txt {
       font-weight: 200;
@@ -141,6 +151,15 @@
   // --- ABOUT SECTION -> RESPONSIVE ---
 
 // PC con pantalla pequeña /Tablets grandes
+
+@media screen and (width < 920px ) {
+  .stacks{
+    height: 600px;
+  }
+ 
+}
+
+
 @media screen and (width < 820px ) {
   .about__container{
     flex-direction: column-reverse
@@ -162,8 +181,11 @@
     font-size: 1.1rem;
   }
 
+  .stacks__tools{
+    
+  }
   .stacks__img{
-    width: 50px;
+    width: 100px;
   }
 
   .stacks__txt{
