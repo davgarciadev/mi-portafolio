@@ -22,7 +22,7 @@
 - **Responsive:** Adaptable a cualquier dispositivo.
 - **Tecnologías Utilizadas:** HTML, SASS, JavaScript.
 - **Metodología BEM:** Para una mayor claridad y reutilización del código.
-- **Estructura Modular:** Código organizado en diferentes carpetas para una mejor mantenibilidad.
+- **Estructura Modular "7-1" :** Código modularizado usando el patrón "7-1" con los directorios: base | components | layout | pages | themes | utils | vendors
 - **Elementos Interactivos:** Animaciones y efectos variados para enriquecer la experiencia de usuario.
 
 ## 📸 Capturas de Pantalla
